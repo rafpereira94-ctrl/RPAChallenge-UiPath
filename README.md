@@ -3,7 +3,7 @@ This project automates the RPA Challenge website using UiPath.
 
 This automation will:
 - Download the Excel input file available at https://rpachallenge.com
-- Read and process through the table data
+- Read and process the table data
 - For each row: 
    - Dynamically identify and populate the form fields present on the website
    - Submit the transaction
