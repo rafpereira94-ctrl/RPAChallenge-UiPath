@@ -48,7 +48,7 @@ This automation will:
 - The automation relies on simulate typing and clicking which allow the automation to run completely out of focus reducing the possibility for issues and improving performance
 
 ### Retry Strategy
-The website offers very little feedback on each submission but the very last and the challenge restarts upon page refresh as some traditional retry strategies such as relaunching the browser aren’t a good fit, retries were left on an individual activity level which is already covered by modern activities
+The website offers very little feedback on each submission but the very last and the challenge restarts upon page refresh as such some traditional retry strategies like relaunching the browser aren’t a good fit, retries were left on an individual activity level which is already covered by modern activities
 
 ## Logging
 The automation logs include:
