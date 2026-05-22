@@ -1,0 +1,22 @@
+
+################################################################################
+# Added by UiPath Studio
+# Prevent caching and local artifacts from being committed
+################################################################################
+.local
+################################################################################
+# End of UiPath Studio common ignores
+################################################################################
+.project
+.settings/
+.local/
+.nuget/
+packages/
+Logs/
+TestResults/
+Screenshots/
+*.nupkg
+.project/
+.git/
+.screenshots/
+.tmh/

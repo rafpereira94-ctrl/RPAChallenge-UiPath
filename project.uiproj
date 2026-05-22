@@ -1,0 +1,6 @@
+{
+  "Name": "0001_RPAChallenge_Conkord",
+  "ProjectType": "Process",
+  "Description": "Assessment automation for Conkord",
+  "MainFile": "Main.xaml"
+}

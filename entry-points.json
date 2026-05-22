@@ -1,0 +1,66 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "682d148f-2ddc-40d7-9f9b-82f5f7903080",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_ExcelDownloadPath": {
+            "type": "string",
+            "x-default-expression": "\"https://www.rpachallenge.com/assets/downloadFiles/challenge.xlsx\"",
+            "default": "https://www.rpachallenge.com/assets/downloadFiles/challenge.xlsx"
+          },
+          "io_ResolvedCases": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "x-default-expression": "0",
+            "default": 0
+          },
+          "in_ExpectedCases": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "x-default-expression": "0",
+            "default": 0
+          },
+          "in_stakeholderEmail": {
+            "type": "string",
+            "x-default-expression": "\"stake@holder.com\"",
+            "default": "stake@holder.com"
+          },
+          "in_developerEmail": {
+            "type": "string",
+            "x-default-expression": "\"dev@loper.com\"",
+            "default": "dev@loper.com"
+          },
+          "io_FailedCases": {
+            "type": "string",
+            "x-default-expression": "\"\"",
+            "default": ""
+          },
+          "in_ProcessName": {
+            "type": "string",
+            "x-default-expression": "\"0001_RPAChallenge_Conkord\"",
+            "default": "0001_RPAChallenge_Conkord"
+          },
+          "in_EnvironmentName": {
+            "type": "string",
+            "x-default-expression": "\"DEV\"",
+            "default": "DEV"
+          }
+        },
+        "required": [
+          "in_ExcelDownloadPath",
+          "in_stakeholderEmail",
+          "in_developerEmail",
+          "in_ProcessName",
+          "in_EnvironmentName"
+        ]
+      }
+    }
+  ]
+}
