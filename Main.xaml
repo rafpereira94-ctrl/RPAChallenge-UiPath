@@ -198,22 +198,26 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2936,7777" sap2010:WorkflowViewState.IdRef="Sequence_34">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2569,8380" sap2010:WorkflowViewState.IdRef="Sequence_34">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Handles unexpected exceptions, notifies assigned developers and stakeholders" DisplayName="Try Catch - RPAChallenge_Conkord_Global" sap:VirtualizedContainerService.HintSize="658,7754" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Handles unexpected exceptions, notifies assigned developers and stakeholders" DisplayName="Try Catch - RPAChallenge_Conkord_Global" sap:VirtualizedContainerService.HintSize="658,8357" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,7479" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,8082" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Default="[Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),&quot;Downloads&quot;,&quot;RPAChallengeInput.xlsx&quot;)]" Name="clientExcelPath" />
             <Variable x:TypeArguments="sd:DataTable" Name="dtClients" />
@@ -449,7 +453,7 @@
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
-          <TryCatch DisplayName="Try Catch - Process " sap:VirtualizedContainerService.HintSize="622,4587" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+          <TryCatch DisplayName="Try Catch - Process " sap:VirtualizedContainerService.HintSize="622,5190" sap2010:WorkflowViewState.IdRef="TryCatch_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -457,7 +461,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="620,4042" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="620,4741" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="ui:UiElement" Name="outputElement" />
                 </Sequence.Variables>
@@ -474,13 +478,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:LogMessage>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="586,3925" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="d050ba82-9dba-4b2c-9d96-da02706c1734" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="586,4624" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="d050ba82-9dba-4b2c-9d96-da02706c1734" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="584,3731" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="584,4430" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Default="0" Name="CurrentIndex" />
                         </Sequence.Variables>
@@ -494,19 +498,19 @@
                             <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="cfcf164c-353d-467e-92e7-e7e530ff3497" ContentHash="z09Ui8eHvUO1tPDpxG-Rtg" CvElementArea="16, 1157, 840, 58" CvTextArea="410, 1177, 50, 16" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 1159, 834, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="a650c413-513e-4a5a-a594-2dced4707a4f" InformativeScreenshot="84939abff310b6c249603c48b23d2333.jpg" Reference="LOkQyM36I0quTLX3T2spdw/npx6idETy0O-I6gZ2lJdIg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dtClients]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="550,3311" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dtClients]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="550,4010" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,3129" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,3828" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <TryCatch DisplayName="Try Catch - Submit Client List" sap:VirtualizedContainerService.HintSize="514,3069" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                <TryCatch DisplayName="Try Catch - Submit Client List" sap:VirtualizedContainerService.HintSize="514,3768" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -514,13 +518,40 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <Sequence DisplayName="Automate filling RPA Challenge web form with client data" sap:VirtualizedContainerService.HintSize="512,2466" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                    <Sequence DisplayName="Automate filling RPA Challenge web form with client data" sap:VirtualizedContainerService.HintSize="512,2523" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Working on client &quot; &amp; (CurrentIndex + 1).ToString()]" />
+                                      <If Condition="[CurrentRow.ItemArray.All(Function(field) field IsNot DBNull.Value AndAlso Not String.IsNullOrWhiteSpace(field.ToString()))]" DisplayName="Validate row completeness" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="If_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Throw Exception="[New Exception(&quot;Missing required fields.&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
                                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" ContinueOnError="False" DeselectAfter="True" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="d050ba82-9dba-4b2c-9d96-da02706c1734" Text="[CurrentRow(&quot;company name&quot;).ToString]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="rpachallenge.com" ContentHash="A_VDMgR96kuTD_dO33scJg" DesignTimeRectangle="976, 442, 778, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' matching:class='fuzzy' fuzzylevel:class='0.0' ng-reflect-name='labelCompanyName' /&gt;" Guid="19932d78-28c2-4ffa-b8ff-c25f361b43ea" InformativeScreenshot="044dddcbf498828a5f92ed6a89b02acb.jpg" IsResponsive="True" Reference="LOkQyM36I0quTLX3T2spdw/Gp72b3JFUUCDCU1OnNYzqA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
@@ -649,6 +680,42 @@
                                         </Sequence>
                                       </ActivityAction>
                                     </Catch>
+                                    <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_37">
+                                      <ActivityAction x:TypeArguments="s:Exception">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="512,642" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[exception.message.contains(&quot;Missing required fields&quot;)]" sap:VirtualizedContainerService.HintSize="478,582" sap2010:WorkflowViewState.IdRef="If_12">
+                                            <If.Then>
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_49" Message="[&quot;Required fields are missing, skipping to next case &quot; + exception.message]" />
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_50" Message="[&quot;Unexpected submission failure &quot; + exception.message]" />
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </Catch>
                                   </TryCatch.Catches>
                                   <TryCatch.Finally>
                                     <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="512,25" sap2010:WorkflowViewState.IdRef="Sequence_44">
@@ -714,22 +781,8 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,175" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;Unexpected initialization failure &quot; + exception.message]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,175" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;Unexpected process failure &quot; + exception.message]" />
                     <Rethrow sap:VirtualizedContainerService.HintSize="586,48" sap2010:WorkflowViewState.IdRef="Rethrow_5" />
-                  </Sequence>
-                </ActivityAction>
-              </Catch>
-              <Catch x:TypeArguments="s:ArgumentException" sap2010:WorkflowViewState.IdRef="Catch`1_29">
-                <ActivityAction x:TypeArguments="s:ArgumentException">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Catch - ArgumentException" sap:VirtualizedContainerService.HintSize="620,90" sap2010:WorkflowViewState.IdRef="Sequence_71">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
                   </Sequence>
                 </ActivityAction>
               </Catch>
