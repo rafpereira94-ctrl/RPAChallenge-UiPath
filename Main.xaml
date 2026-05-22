@@ -204,20 +204,20 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2569,8380" sap2010:WorkflowViewState.IdRef="Sequence_34">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2569,7043" sap2010:WorkflowViewState.IdRef="Sequence_34">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Handles unexpected exceptions, notifies assigned developers and stakeholders" DisplayName="Try Catch - RPAChallenge_Conkord_Global" sap:VirtualizedContainerService.HintSize="658,8357" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Handles unexpected exceptions, notifies assigned developers and stakeholders" DisplayName="Try Catch - RPAChallenge_Conkord_Global" sap:VirtualizedContainerService.HintSize="658,7020" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,8082" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="656,6745" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Default="[Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),&quot;Downloads&quot;,&quot;RPAChallengeInput.xlsx&quot;)]" Name="clientExcelPath" />
             <Variable x:TypeArguments="sd:DataTable" Name="dtClients" />
@@ -227,16 +227,16 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch sap2010:Annotation.AnnotationText="Downloads and handles any necessary logins for the process, ensures compliance" DisplayName="Try Catch - Initialization" sap:VirtualizedContainerService.HintSize="622,1852" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch sap2010:Annotation.AnnotationText="Downloads and handles any necessary logins for the process, ensures compliance" DisplayName="Try Catch - Initialization" sap:VirtualizedContainerService.HintSize="622,102" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,749" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,687" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -250,7 +250,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:LogMessage>
-                <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Helps compliance" AppliesTo="All" DisplayName="Kill Excel" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel">
+                <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Helps compliance" AppliesTo="All" DisplayName="Kill Excel" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -259,7 +259,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:KillProcess>
-                <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Helps compliance" AppliesTo="All" DisplayName="Kill Chrome" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Chrome">
+                <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Helps compliance" AppliesTo="All" DisplayName="Kill Chrome" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Chrome">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -397,10 +397,10 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="450,283" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -414,10 +414,11 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="si:FileNotFoundException" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Catch - FileNotFoundException" sap:VirtualizedContainerService.HintSize="450,283" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                  <Sequence DisplayName="Catch - FileNotFoundException" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_73">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_46" Message="[&quot;Excel File not found &quot; + exception.message]" />
@@ -430,10 +431,11 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:ExcelException" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Catch - ExcelException" sap:VirtualizedContainerService.HintSize="450,283" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                  <Sequence DisplayName="Catch - ExcelException" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_74">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_47" Message="[&quot;Excel Failure &quot; + exception.message]" />
@@ -453,7 +455,7 @@
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
-          <TryCatch DisplayName="Try Catch - Process " sap:VirtualizedContainerService.HintSize="622,5190" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+          <TryCatch DisplayName="Try Catch - Process " sap:VirtualizedContainerService.HintSize="622,5603" sap2010:WorkflowViewState.IdRef="TryCatch_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -461,7 +463,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="620,4741" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="620,5154" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="ui:UiElement" Name="outputElement" />
                 </Sequence.Variables>
@@ -478,13 +480,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:LogMessage>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="586,4624" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="d050ba82-9dba-4b2c-9d96-da02706c1734" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Rpa Challenge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="586,5037" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[outputElement]" ScopeGuid="d050ba82-9dba-4b2c-9d96-da02706c1734" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="584,4430" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="584,4843" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Default="0" Name="CurrentIndex" />
                         </Sequence.Variables>
@@ -498,19 +500,19 @@
                             <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="cfcf164c-353d-467e-92e7-e7e530ff3497" ContentHash="z09Ui8eHvUO1tPDpxG-Rtg" CvElementArea="16, 1157, 840, 58" CvTextArea="410, 1177, 50, 16" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 1159, 834, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="a650c413-513e-4a5a-a594-2dced4707a4f" InformativeScreenshot="84939abff310b6c249603c48b23d2333.jpg" Reference="LOkQyM36I0quTLX3T2spdw/npx6idETy0O-I6gZ2lJdIg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dtClients]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="550,4010" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentIndex]" DataTable="[dtClients]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="550,4423" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                           <ui:ForEachRow.Body>
                             <ActivityAction x:TypeArguments="sd:DataRow">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,3828" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,4241" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <TryCatch DisplayName="Try Catch - Submit Client List" sap:VirtualizedContainerService.HintSize="514,3768" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                <TryCatch DisplayName="Try Catch - Submit Client List" sap:VirtualizedContainerService.HintSize="514,4181" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -657,14 +659,14 @@
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Catch - NodeNotFoundException" sap:VirtualizedContainerService.HintSize="512,446" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                        <Sequence DisplayName="Catch - NodeNotFoundException" sap:VirtualizedContainerService.HintSize="512,401" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[&quot;Unable to locate element. Adding &quot;+currentrow(&quot;first name&quot;).tostring + &quot; &quot; + currentRow(&quot;last name&quot;).tostring +&quot; entry to FailedCases&quot;]" />
-                                          <Assign sap2010:Annotation.AnnotationText="Would have been beneficial to have ids for the clients" sap:VirtualizedContainerService.HintSize="478,211" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <Assign sap2010:Annotation.AnnotationText="Would have been beneficial to have ids for the clients" sap:VirtualizedContainerService.HintSize="478,166" sap2010:WorkflowViewState.IdRef="Assign_1">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[io_FailedCases]</OutArgument>
                                             </Assign.To>
@@ -713,6 +715,34 @@
                                               </Sequence>
                                             </If.Else>
                                           </If>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </Catch>
+                                    <Catch x:TypeArguments="s:TimeoutException" sap2010:WorkflowViewState.IdRef="Catch`1_39">
+                                      <ActivityAction x:TypeArguments="s:TimeoutException">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="s:TimeoutException" Name="exception" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Catch - TimeoutException" sap:VirtualizedContainerService.HintSize="512,446" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="LogMessage_51" Message="[&quot;UI element time out for: &quot;+currentrow(&quot;first name&quot;).tostring + &quot; &quot; + currentRow(&quot;last name&quot;).tostring +&quot; entry to FailedCases&quot;]" />
+                                          <Assign sap2010:Annotation.AnnotationText="Would have been beneficial to have ids for the clients" sap:VirtualizedContainerService.HintSize="478,211" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[io_FailedCases]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[io_FailedCases &amp; CurrentRow.ToString()]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
                                         </Sequence>
                                       </ActivityAction>
                                     </Catch>
