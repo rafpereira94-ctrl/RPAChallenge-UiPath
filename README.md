@@ -33,10 +33,10 @@ This automation will:
 - Failure escalation support and notification
 
 ## Assumptions
-https://rpachallenge.com is available
-Chrome browser is installed locally and UiPath extension is installed
-Internet connectivity is stable
-The input Excel suffers no changes
+- https://rpachallenge.com is available
+- Chrome browser is installed locally and UiPath extension is installed
+- Internet connectivity is stable
+- The input Excel suffers no changes
 
 ## Technical Decisions
 ### Input Data
