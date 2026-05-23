@@ -79,6 +79,10 @@ UiPath packages:
 4. Open Main.xaml
 5. Run the workflow
 
+## Known Limitations
+- No mid-run recovery, as it stands an unresponsive page or a browser crash will require a full restart of the automation
+- Failed case identification is limited by the absence of a unique identifier per row in the input Excel, when a row fails the automation will log the missing data but cannot guarantee a perfect reference back to the entry, particularly if there are repeated first and last names in the dataset
+
 ## Considerations, Comments and Upgrade Opportunities
 The following section contains additional commentary on the project and reflections:
 - Email notifications are implemented but intentionally mocked — the Microsoft 365 and mail-related dependencies are kept in the project so that reviewers can inspect the notification activities in Studio without them rendering as broken or unreadable. To fully configure them, valid Microsoft 365 credentials and a connection would need to be provided; a natural extension would also be to attach exception screenshots to the relevant failure emails
