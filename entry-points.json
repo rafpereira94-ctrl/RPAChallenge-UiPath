@@ -9,9 +9,12 @@
         "type": "object",
         "properties": {
           "io_FailedCases": {
-            "type": "string",
-            "x-default-expression": "\"\"",
-            "default": ""
+            "type": "string"
+          },
+          "io_ResolvedCases": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
           },
           "in_ProcessName": {
             "type": "string",
@@ -38,13 +41,6 @@
             "x-default-expression": "\"https://www.rpachallenge.com/assets/downloadFiles/challenge.xlsx\"",
             "default": "https://www.rpachallenge.com/assets/downloadFiles/challenge.xlsx"
           },
-          "io_ResolvedCases": {
-            "type": "integer",
-            "minimum": -2147483648,
-            "maximum": 2147483647,
-            "x-default-expression": "0",
-            "default": 0
-          },
           "in_ExpectedCases": {
             "type": "integer",
             "minimum": -2147483648,
@@ -60,6 +56,19 @@
           "in_stakeholderEmail",
           "in_ExcelDownloadPath"
         ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "io_FailedCases": {
+            "type": "string"
+          },
+          "io_ResolvedCases": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          }
+        }
       }
     }
   ]
